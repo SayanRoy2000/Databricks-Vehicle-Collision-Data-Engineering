@@ -29,10 +29,10 @@ crashDF.printSchema()
 display(crashDF)
 
 # COMMAND ----------
-
-file_location="/FileStore/tables/unzipped_file.csv"
-crashDF=spark.read.format("csv").option("header","true").option("inferSchema","true").load(file_location)
-display(crashDF)
+#If you have the dataset file then you can read it directly for better result
+#file_location="/FileStore/tables/unzipped_file.csv"
+#crashDF=spark.read.format("csv").option("header","true").option("inferSchema","true").load(file_location)
+#display(crashDF)
 
 # COMMAND ----------
 
